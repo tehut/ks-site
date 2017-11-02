@@ -1,0 +1,4 @@
+[submodule "docs/ksonnet-lib"]
+	path = docs/ksonnet-lib
+	url = git@github.com:ksonnet/ksonnet-lib.git
+	branch = master
