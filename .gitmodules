@@ -1,4 +1,9 @@
-[submodule "docs/ksonnet-lib"]
-	path = docs/ksonnet-lib
+[submodule "docs/_includes/ksonnet-lib"]
+	path = docs/_includes/submodules/ksonnet-lib
 	url = git@github.com:ksonnet/ksonnet-lib.git
-	branch = master
+[submodule "docs/_includes/kubecfg"]
+	path = docs/_includes/submodules/kubecfg
+	url = git@github.com:ksonnet/kubecfg.git
+[submodule "docs/_includes/vscode-jsonnet"]
+	path = docs/_includes/submodules/vscode-jsonnet
+	url = git@github.com:heptio/vscode-jsonnet.git

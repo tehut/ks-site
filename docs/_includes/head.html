@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}?t={{ site.time | date_to_xmlschema }}">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:500">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+<!-- Favicons -->
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "/favicon-192x192.png" | prepend: site.baseurl }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ "/favicon-160x160.png" | prepend: site.baseurl }}" sizes="160x160">
+  <link rel="icon" type="image/png" href="{{ "/favicon-96x96.png" | prepend: site.baseurl }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="{{ "/mstile-144x144.png" | prepend: site.baseurl }}">
+
+  <meta name="og:url" content="{{ site.baseurl | prepend: site.url }}">
+  <meta name="og:image" content="website">
+  <meta name="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.tagline }}{% endif %}">
+  <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="og:image" content="{{ '/images/share-image.png' | prepend: site.baseurl }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@heptio">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.tagline }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ '/images/share-image.png' | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

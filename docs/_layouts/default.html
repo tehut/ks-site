@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" class="{% if page.fullscreen %}ksonnet-fullscreen {% endif %}no-js">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
