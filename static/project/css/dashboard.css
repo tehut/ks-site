@@ -1,3 +1,17 @@
 .modal-dialog {
     z-index: 1100;
 }
+
+.navbar-right li {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* doesn't work... */
+.vcenter {
+	vertical-align: middle;
+    display: inline-block;
+    float: none;
+    border: 1px solid white;
+}
+
